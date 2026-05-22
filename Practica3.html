@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Práctica 3</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<img src="imagenes/its.png" class="logo">
+
+<div>
+    
+
+
+<h1 style="color:white;">
+ARQUITECTURA DE COMPUTADORAS
+
+<p>Practica 3: Intercalacion de RAM</p>
+</div>
+
+<img src="imagenes/Logo-Tec.png" class="logo">
+
+</header>
+
+<nav>
+
+<a href="index.html">INICIO</a>
+
+</nav>
+<div style="padding:20px;">
+
+<a href="practicas.html">
+
+<button>
+⬅ Regresar
+</button>
+
+</a>
+
+</div>
+
+<section>
+
+<div class="card">
+
+<h2>Objetivo</h2>
+
+<p>
+Observar el estado del equipo antes de una actualización.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Desarrollo</h2>
+
+<p>
+Se muestra la ventana del Administrador de tareas de Windows (específicamente en la pestaña
+de Rendimiento y seleccionando la sección de Memoria). Sin embargo, corresponden a dos
+momentos o configuraciones de hardware drásticamente diferentes.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+Evidencias
+</h2>
+
+<div class="evidencia">
+
+<img src="imagenes/img1practica3.jpeg" class="foto">
+
+<div class="descripcion">
+
+<h3>
+Descripción de la Primera Imagen:
+</h3>
+
+<p>
+Esta imagen muestra el estado del equipo antes de una actualización masiva de
+memoria o con un módulo básico de RAM.
+Total de Memoria: El sistema reconoce 16.0 GB de RAM total (15.8 GB utilizables).
+Uso actual: Se están utilizando 3.2 GB (un 22% de la capacidad total), dejando 12.3
+GB disponibles.
+Velocidad: La memoria está corriendo a 2667 MHz.
+Ranuras usadas: Indica 1 de 4. Esto significa que el equipo tiene un solo módulo
+físico de RAM instalado en la placa madre.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="evidencia">
+
+<img src="imagenes/imagen 2 practica 3.jpeg" class="foto">
+
+<div class="descripcion">
+
+<h3>
+Descripción de la Segunda Imagen:
+</h3>
+
+<p>
+Esta imagen muestra el equipo después de una expansión de hardware muy
+importante.
+Total de Memoria: El sistema ahora reconoce 64.0 GB de RAM total (63.8 GB
+utilizables).
+Uso actual: Se están utilizando 3.7 GB. Como ahora el total es gigantesco, este
+consumo representa apenas el 6% de la capacidad, dejando la friolera de 59.9
+GB disponibles.
+Velocidad: La velocidad bajó ligeramente a 2400 MHz.
+Ranuras usadas: Indica 4 de 4. Significa que se han ocupado todos los slots
+disponibles de la placa madre (probablemente instalando 4 módulos de 16 GB
+cada uno).
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* EVIDENCIAS */
+
+.evidencia{
+    display:flex;
+    align-items:center;
+    gap:75px;
+    background:white;
+    padding:30px;
+    border-radius:50px;
+    margin-top:15px;
+    box-shadow:10px 10px 10px rgba(10,5,5,0.2);
+}
+
+.foto{
+    width:900px;
+    border-radius:25px;
+}
+
+.descripcion h3{
+    color:#7b1e3a;
+    margin-bottom:20px;
+    font-size:50px;
+}
+
+.descripcion p{
+    font-size:35px;
+    line-height:1.6;
+}
+
+</style>
+
+</body>
+</html>

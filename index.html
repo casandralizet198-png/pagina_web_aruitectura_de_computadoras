@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arquitectura de Computadoras</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+/* GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5eef1;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(10   0deg,#7b1e3a,#5c122b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    border-radius:20px 20px 20px 20px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    width:200px;
+}
+
+.titulo{
+    text-align:center;
+}
+
+.titulo h1{
+    color:white;
+    font-size:70px;
+}
+
+.titulo p{
+    color:#ffd6e0;
+    font-size:70px;
+    margin-top:8px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#5c122b;
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    padding:0px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd6e0;
+    transform:scale(1.2);
+}
+
+/* SECCIONES */
+
+section{
+    padding:50px;
+}
+
+/* TITULOS */
+
+.seccion-titulo{
+    color:#7b1e3a;
+    font-size:50px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:50px;
+    margin-bottom:50px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#7b1e3a;
+    margin-bottom:15px;
+      font-size:30px;
+}
+
+.card h3{
+    color:#7b1e3a;
+    margin-top:55px;
+      font-size:25px;
+}
+
+.card ul{
+    margin-left:25px;
+    margin-top:20px;
+      font-size:25px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#7b1e3a;
+    color:white;
+    text-align:center;
+    padding:55px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="imagenes/its.png" class="logo">
+
+<div class="titulo">
+
+<h1>
+ARQUITECTURA DE COMPUTADORAS
+</h1>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+</div>
+
+<img src= "imagenes/Logo-Tec.png" class="logo">
+
+</header>
+
+<!-- MENÚ -->
+
+<nav>
+
+<a href="index.html">
+INICIO
+</a>
+
+<a href="Practicas.html">
+PRÁCTICAS       
+</a>
+
+<a href="Tareas.html">
+TAREAS
+</a>    
+
+</nav>
+
+<!-- TEMARIO -->
+
+<section>
+
+<h1 class="seccion-titulo">
+Temario Completo
+</h1>
+
+<div class="card">
+
+<h2>
+Unidad 1 - Arquitecturas de Cómputo
+</h2>
+
+<h3>
+1.1 Modelos de arquitecturas de cómputo
+</h3>
+
+<ul>
+
+<li>1.1.1 Clásicas</li>
+
+<li>1.1.2 Segmentadas</li>
+
+<li>1.1.3 De multiprocesamiento</li>
+
+</ul>
+
+<h3>
+1.2 Análisis de los componentes
+</h3>
+
+<ul>
+
+<li>1.2.1 CPU</li>
+
+<ul>
+
+<li>1.2.1.1 Arquitecturas</li>
+
+<li>1.2.1.2 Tipos</li>
+
+<li>1.2.1.3 Características</li>
+
+<li>
+1.2.1.4 Funcionamiento
+(ALU, unidad de control, registros y buses internos)
+</li>
+
+</ul>
+
+<li>1.2.2 Memoria</li>
+
+<ul>
+
+<li>
+1.2.2.1 Conceptos básicos del manejo de memoria
+</li>
+
+<li>
+1.2.2.2 Memoria principal semiconductora
+</li>
+
+<li>1.2.2.3 Memoria caché</li>
+
+</ul>
+
+<li>
+1.2.3 Manejo de entrada/salida
+</li>
+
+<ul>
+
+<li>1.2.3.1 Módulos de entrada/salida</li>
+
+<li>1.2.3.2 Entrada/salida programada</li>
+
+<li>
+1.2.3.3 Entrada/salida mediante interrupciones
+</li>
+
+<li>
+1.2.3.4 Acceso directo a memoria
+</li>
+
+<li>
+1.2.3.5 Canales y procesadores de entrada/salida
+</li>
+
+</ul>
+
+<li>1.2.4 Buses</li>
+
+<ul>
+
+<li>1.2.4.1 Tipos de buses</li>
+
+<li>1.2.4.2 Estructura de buses</li>
+
+<li>1.2.4.3 Jerarquía de buses</li>
+
+</ul>
+
+<li>1.2.5 Interrupciones</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+Unidad 2 - Estructura y Funcionamiento de la CPU
+</h2>
+
+<ul>
+
+<li>2.1 Organización del procesador</li>
+
+<li>2.2 Estructura de registros</li>
+
+<ul>
+
+<li>2.2.1 Registros visibles para el usuario</li>
+
+<li>2.2.2 Registros de control y estado</li>
+
+<li>
+2.2.3 Ejemplos de organización de registros de CPU reales
+</li>
+
+</ul>
+
+<li>2.3 El ciclo de instrucción</li>
+
+<ul>
+
+<li>2.3.1 Fetch - Decode - Execute</li>
+
+<li>2.3.2 Segmentación de instrucciones</li>
+
+<li>
+2.3.3 Conjunto de instrucciones:
+Características y funciones
+</li>
+
+<li>
+2.3.4 Modos de direccionamiento y formatos
+</li>
+
+</ul>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+Unidad 3 - Selección de Componentes para Ensamble
+</h2>
+
+<ul>
+
+<li>3.1 Chipset</li>
+
+<li>3.2 Aplicaciones</li>
+
+<li>3.3 Ambientes de servicio</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>
+Unidad 4 - Procesamiento Paralelo
+</h2>
+
+<ul>
+
+<li>Procesamiento paralelo</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Somos estudiantes del Instituto Tecnológico de Saltillo
+</p>
+
+<p>
+Síguenos en nuestras redes sociales
+</p>
+
+<a href="https://www.facebook.com/TecNMcampusSaltillo"> 
+Facebook Tecnologico de Saltillo
+</footer>

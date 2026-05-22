@@ -1,0 +1,225 @@
+/* CONFIGURACIÓN GENERAL */
+/* Afecta a toda la página */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+/* FONDO GENERAL */
+/* Afecta al body de index, tareas, prácticas y prácticas individuales */
+body{
+    background:#f5eef1;
+    color:#333;
+    font-size:25px;
+    line-height:1.6;
+}
+
+/* ENCABEZADO SUPERIOR */
+/* Afecta al header de index.html, tareas.html, practicas.html, Practica1.html, etc */
+.header{
+    background:linear-gradient(135deg,#7b1e3a,#5c122b);
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px;
+    flex-wrap:wrap;
+    border-radius:0px 0px 30px 30px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* LOGOS */
+/* Afecta a los logos del ITS y Tec */
+.logo{
+    width:250px;
+    transition:0.3s;
+}
+
+/* EFECTO EN LOGOS */
+/* Afecta cuando el cursor pasa sobre los logos */
+.logo:hover{
+    transform:scale(1.05);
+}
+
+/* CONTENEDOR DEL TÍTULO */
+/* Afecta el texto central del encabezado */
+.titulo{
+    text-align:center;
+    font-size:50px;
+}
+
+/* TÍTULO PRINCIPAL */
+/* Afecta títulos como: PRÁCTICAS, TAREAS y ARQUITECTURA DE COMPUTADORAS */
+.titulo h1{
+    color:white;
+    font-size:70px;
+    margin-bottom:10px;
+}
+
+/* SUBTÍTULO DEL HEADER */
+/* Afecta textos debajo del título principal */
+.titulo p{
+    color:#ffd6e0;
+    font-size:50px;
+}
+
+/* MENÚ */
+/* Afecta al menú de navegación */
+nav{
+    background:#5c122b;
+    padding:25px;
+    text-align:center;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* OPCIONES DEL MENÚ */
+/* Afecta a INICIO, PRÁCTICAS y TAREAS */
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:50px;
+    font-weight:bold;
+    font-size:25px;
+    transition:0.3s;
+}
+
+/* EFECTO DEL MENÚ */
+/* Afecta cuando el cursor pasa sobre INICIO, PRÁCTICAS y TAREAS */
+nav a:hover{
+    color:#ffd6e0;
+    letter-spacing:2px;
+}
+
+/* ESPACIO DE LAS SECCIONES */
+/* Afecta todas las secciones de index, tareas y prácticas */
+section{
+    padding:50px;
+}
+
+/* TARJETAS */
+/* Afecta cuadros como Práctica 1, Práctica 2, Tarea 1, etc */
+.card{
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    margin-bottom:35px;
+    box-shadow:0px 8px 20px rgba(0,0,0,0.1);
+    font-size:30px;
+    transition:0.3s;
+}
+
+/* EFECTO DE TARJETAS */
+/* Afecta cuando el cursor pasa sobre tarjetas */
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* TÍTULOS PRINCIPALES */
+/* Afecta títulos como: Temario Completo, Prácticas y Tareas */
+h1{
+    color:#7b1e3a;
+    font-size:50px;
+}
+
+/* SUBTÍTULOS */
+/* Afecta textos como: Objetivo, Desarrollo, Materiales y Evidencias */
+h2{
+    color:#7b1e3a;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+/* TÍTULOS PEQUEÑOS */
+/* Afecta subtítulos internos de prácticas y tareas */
+h3{
+    color:#7b1e3a;
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+/* SUBTÍTULOS MÁS PEQUEÑOS */
+/* Afecta títulos secundarios */
+h4{
+    color:#7b1e3a;
+    font-size:80px;
+    margin-bottom:10px;
+}
+
+/* PÁRRAFOS */
+/* Afecta todos los textos */
+p{
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* LISTAS */
+/* Afecta listas de características */
+ul{
+    margin-left:35px;
+    margin-top:15px;
+}
+
+/* ELEMENTOS DE LISTA */
+/* Afecta cada elemento individual */
+li{
+    margin-bottom:12px;
+}
+
+/* BOTONES */
+/* Afecta botones como: Ingresar y Regresar */
+button{
+    background:#7b1e3a;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:50px;
+    cursor:pointer;
+    margin-top:25px;
+    font-size:35px;
+    transition:0.3s;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+}
+
+/* EFECTO DE LOS BOTONES */
+/* Afecta cuando el cursor pasa sobre los botones */
+button:hover{
+    background:#5c122b;
+    transform:scale(1.05);
+}
+
+/* IMÁGENES */
+/* Afecta imágenes de prácticas y tareas */
+img{
+    border-radius:25px;
+    margin-top:20px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* PIE DE PÁGINA */
+/* Afecta footer de index, tareas y prácticas */
+footer{
+    background:#7b1e3a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+    font-size:35px;
+}
+
+/* REDES SOCIALES */
+/* Afecta enlaces de Facebook, Instagram, etc */
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:30px;
+    transition:0.3s;
+}
+
+/* EFECTO EN REDES SOCIALES */
+/* Afecta cuando el cursor pasa sobre redes */
+footer a:hover{
+    color:#ffd6e0;
+}
