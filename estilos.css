@@ -211,7 +211,7 @@ footer{
 /* REDES SOCIALES */
 /* Afecta enlaces de Facebook, Instagram, etc */
 footer a{
-    color:white;
+    color:rgb(9, 9, 236);
     text-decoration:none;
     margin:15px;
     font-size:30px;
@@ -221,5 +221,5 @@ footer a{
 /* EFECTO EN REDES SOCIALES */
 /* Afecta cuando el cursor pasa sobre redes */
 footer a:hover{
-    color:#ffd6e0;
+    color:#0537bf;
 }
