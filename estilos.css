@@ -18,7 +18,7 @@ body{
 
 /* ENCABEZADO SUPERIOR */
 /* Afecta al header de index.html, tareas.html, practicas.html, Practica1.html, etc */
-.header{
+.header{    
     background:linear-gradient(135deg,#7b1e3a,#5c122b);
     color:white;
     display:flex;
