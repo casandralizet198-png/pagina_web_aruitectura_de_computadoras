@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resumen Unidad 1</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+/* GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4eef1;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(100deg,#7b1e3a,#5c122b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width:120px;
+}
+
+.titulo{
+    text-align:center;
+}
+
+.titulo h1{
+    color:white;
+    font-size:60px;
+}
+
+.titulo h2{
+    color:white;
+    font-size:40px;
+    margin-top:10px;
+}
+
+.titulo p{
+    color:#ffd6e0;
+    font-size:25px;
+    margin-top:10px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#5c122b;
+    display:flex;
+    justify-content:center;
+    gap:150px;
+    padding:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd6e0;
+}
+
+/* SECCIÓN */
+
+section{
+    padding:25px;
+}
+
+/* BOTÓN */
+
+.btn-regresar{
+    background:#7b1e3a;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.btn-regresar:hover{
+    background:#5c122b;
+}
+
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+
+.card h2{
+    color:#7b1e3a;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#7b1e3a;
+    font-size:32px;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+/* CAJAS */
+
+.info{
+    background:#fdf5f7;
+    border:2px solid #f0d6de;
+    border-left:10px solid #7b1e3a;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.azul{
+    border-left:10px solid #2563eb;
+}
+
+/* FILAS */
+
+.fila{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+}
+
+/* ICONOS */
+
+.icono{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    color:white;
+    flex-shrink:0;
+}
+
+.guindo{
+    background:#7b1e3a;
+}
+
+.azul-icono{
+    background:#2563eb;
+}
+
+/* TEXTO */
+
+p{
+    font-size:24px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+ul{
+    margin-left:30px;
+    margin-top:10px;
+}
+
+li{
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+/* DOS COLUMNAS */
+
+.columnas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#7b1e3a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:30px;
+}
+
+footer a{
+    color:#8ec5ff;
+    text-decoration:none;
+    font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="imagenes/its.png" class="logo" alt="ITS">
+
+<div class="titulo">
+
+<h1>
+RESUMEN UNIDAD 1
+</h1>
+
+<h2>
+ARQUITECTURA DE COMPUTADORAS
+</h2>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+</div>
+
+<img src="imagenes/Logo-Tec.png" class="logo" alt="TecNM">
+
+</header>
+
+<!-- MENÚ -->
+
+<nav>
+
+<a href="index.html">INICIO</a>
+
+<a href="Practicas.html">PRÁCTICAS</a>
+
+<a href="Tareas.html">TAREAS</a>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section>
+
+<a href="index.html" class="btn-regresar">
+← Regresar
+</a>
+
+<!-- TEMA 1 -->
+
+<div class="card">
+
+<h2>
+Modelos de Arquitecturas de Cómputo
+</h2>
+
+<div class="info">
+
+<p>
+
+La arquitectura de computadoras define cómo están organizados y cómo trabajan juntos el hardware y el software de una computadora.
+Establece la forma en que se procesan datos, se ejecutan instrucciones y se comunican los componentes.
+
+</p>
+
+</div>
+
+<!-- VON NEUMANN -->
+
+<div class="fila">
+
+<div class="icono guindo">
+🖥
+</div>
+
+<div>
+
+<h3>
+Arquitectura Von Neumann
+</h3>
+
+<p>
+
+Modelo clásico donde la CPU utiliza una sola memoria para guardar tanto datos como instrucciones.
+Todo se comunica mediante un mismo bus.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- HARVARD -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+💾
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+Arquitectura Harvard
+</h3>
+
+<p>
+
+Utiliza memorias separadas para datos e instrucciones, permitiendo acceder a ambos al mismo tiempo.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PIPELINE -->
+
+<div class="fila">
+
+<div class="icono guindo">
+⚙
+</div>
+
+<div>
+
+<h3>
+Arquitectura Segmentada (Pipeline)
+</h3>
+
+<p>
+
+Divide el procesamiento de instrucciones en varias etapas que se ejecutan en paralelo.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- MULTIPROCESAMIENTO -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🔲
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+Multiprocesamiento
+</h3>
+
+<p>
+
+Consiste en usar varios procesadores para ejecutar programas y aumentar el rendimiento del sistema.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- FLYNN -->
+
+<div class="fila">
+
+<div class="icono guindo">
+🧩
+</div>
+
+<div>
+
+<h3>
+Clasificación de Flynn
+</h3>
+
+<p>
+
+Clasifica sistemas según cómo manejan instrucciones y datos:
+
+</p>
+
+<ul>
+
+<li>SISO: una instrucción y un dato.</li>
+
+<li>SIMO: una instrucción y múltiples datos.</li>
+
+<li>MISO: múltiples instrucciones y un dato.</li>
+
+<li>MIMO: múltiples instrucciones y múltiples datos.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 2 -->
+
+<div class="card">
+
+<h2>
+Análisis de los Componentes
+</h2>
+
+<div class="info">
+
+<p>
+
+Los componentes de una computadora son las partes físicas que permiten su funcionamiento.
+
+</p>
+
+</div>
+
+<div class="columnas">
+
+<!-- INTERNOS -->
+
+<div class="info">
+
+<h3>
+Componentes Internos
+</h3>
+
+<ul>
+
+<li>CPU</li>
+<li>Motherboard</li>
+<li>Fuente de poder</li>
+<li>RAM</li>
+<li>GPU</li>
+<li>Tarjeta de sonido</li>
+<li>Tarjeta de red</li>
+
+</ul>
+
+</div>
+
+<!-- EXTERNOS -->
+
+<div class="info azul">
+
+<h3 style="color:#2563eb;">
+Componentes Externos
+</h3>
+
+<ul>
+
+<li>Monitor</li>
+<li>Teclado y mouse</li>
+<li>Impresora</li>
+<li>Micrófono</li>
+<li>Webcam</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 3 -->
+
+<div class="card">
+
+<h2>
+Arquitecturas RISC y CISC
+</h2>
+
+<div class="fila">
+
+<div class="icono guindo">
+R
+</div>
+
+<div>
+
+<h3>
+RISC
+</h3>
+
+<p>
+
+Usa pocas instrucciones simples que se ejecutan rápidamente.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono azul-icono">
+C
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+CISC
+</h3>
+
+<p>
+
+Utiliza instrucciones más complejas y variadas.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 4 -->
+
+<div class="card">
+
+<h2>
+Unidad Central de Procesamiento (CPU)
+</h2>
+
+<div class="info">
+
+<p>
+
+La CPU es el “cerebro” de la computadora, encargado de ejecutar instrucciones y coordinar todas las operaciones del sistema.
+
+</p>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+🧮
+</div>
+
+<div>
+
+<h3>
+ALU (Unidad Aritmética Lógica)
+</h3>
+
+<p>
+
+Realiza operaciones matemáticas y lógicas como sumas, restas y comparaciones.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono azul-icono">
+⚡
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+Unidad de Control
+</h3>
+
+<p>
+
+Coordina y dirige la ejecución de instrucciones y el flujo de datos dentro del procesador.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+🔌
+</div>
+
+<div>
+
+<h3>
+Buses
+</h3>
+
+<p>
+
+Son vías de comunicación que conectan CPU, memoria y periféricos.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 5 -->
+
+<div class="card">
+
+<h2>
+Memoria Principal
+</h2>
+
+<div class="fila">
+
+<div class="icono azul-icono">
+💾
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+RAM
+</h3>
+
+<p>
+
+Memoria temporal de alta velocidad que almacena los programas y datos que la CPU necesita usar inmediatamente.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+📀
+</div>
+
+<div>
+
+<h3>
+ROM
+</h3>
+
+<p>
+
+Memoria permanente que guarda el firmware y las instrucciones básicas para arrancar el sistema.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🚀
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+Memoria Caché
+</h3>
+
+<p>
+
+Memoria ultrarrápida entre la CPU y la RAM que almacena datos usados frecuentemente para acelerar el rendimiento.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 6 -->
+
+<div class="card">
+
+<h2>
+Módulos de Entrada/Salida (E/S)
+</h2>
+
+<div class="info">
+
+<p>
+
+Permiten la comunicación entre la CPU y los dispositivos periféricos.
+
+</p>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+⌨
+</div>
+
+<div>
+
+<h3>
+E/S Programada
+</h3>
+
+<p>
+
+La CPU controla directamente las transferencias de datos mediante software.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🔔
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+E/S por Interrupciones
+</h3>
+
+<p>
+
+La CPU continúa trabajando y el dispositivo avisa cuando termina mediante una interrupción.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 7 -->
+
+<div class="card">
+
+<h2>
+Acceso Directo a Memoria (DMA)
+</h2>
+
+<div class="fila">
+
+<div class="icono guindo">
+📡
+</div>
+
+<div>
+
+<p>
+
+El DMA permite que dispositivos de entrada/salida transfieran datos directamente a la memoria sin usar constantemente la CPU.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEMA 8 -->
+
+<div class="card">
+
+<h2>
+Buses
+</h2>
+
+<div class="info azul">
+
+<p>
+
+Los buses son canales de comunicación que transportan datos entre componentes de la computadora.
+
+</p>
+
+</div>
+
+<ul>
+
+<li>Bus de sistema: conecta CPU y memoria.</li>
+
+<li>Bus de datos: transporta información.</li>
+
+<li>Bus de direcciones: indica ubicaciones de memoria.</li>
+
+<li>Bus de control: coordina operaciones.</li>
+
+<li>Buses locales: conectan dispositivos internos.</li>
+
+<li>Buses periféricos: conectan dispositivos externos.</li>
+
+</ul>
+
+</div>
+
+<!-- TEMA 9 -->
+
+<div class="card">
+
+<h2>
+1.7 Interrupciones
+</h2>
+
+<div class="info">
+
+<p>
+
+Las interrupciones son señales que alteran temporalmente la ejecución normal de la CPU para atender eventos importantes.
+
+</p>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+🔄
+</div>
+
+<div>
+
+<h3>
+Técnica de Poleo (Polling)
+</h3>
+
+<p>
+
+La CPU revisa constantemente el estado de un dispositivo para saber si necesita atención.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono azul-icono">
+⚙
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+Sincronización con E/S
+</h3>
+
+<p>
+
+Permite que la CPU realice otras tareas mientras un dispositivo trabaja y luego responda mediante interrupciones.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+<p>
+Arquitectura de Computadoras
+</p>
+
+<a href="https://www.facebook.com/TecNMcampusSaltillo">
+Facebook Tecnológico de Saltillo
+</a>
+
+</footer>
+
+</body>
+</html>

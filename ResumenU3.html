@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resumen Unidad 1</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+/* GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4eef1;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(100deg,#7b1e3a,#5c122b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width:120px;
+}
+
+.titulo{
+    text-align:center;
+}
+
+.titulo h1{
+    color:white;
+    font-size:60px;
+}
+
+.titulo h2{
+    color:white;
+    font-size:40px;
+    margin-top:10px;
+}
+
+.titulo p{
+    color:#ffd6e0;
+    font-size:25px;
+    margin-top:10px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#5c122b;
+    display:flex;
+    justify-content:center;
+    gap:150px;
+    padding:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd6e0;
+}
+
+/* SECCIÓN */
+
+section{
+    padding:25px;
+}
+
+/* BOTÓN */
+
+.btn-regresar{
+    background:#7b1e3a;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.btn-regresar:hover{
+    background:#5c122b;
+}
+
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+
+.card h2{
+    color:#7b1e3a;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#7b1e3a;
+    font-size:32px;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+/* CAJAS */
+
+.info{
+    background:#fdf5f7;
+    border:2px solid #f0d6de;
+    border-left:10px solid #7b1e3a;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.azul{
+    border-left:10px solid #2563eb;
+}
+
+/* FILAS */
+
+.fila{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+}
+
+/* ICONOS */
+
+.icono{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    color:white;
+    flex-shrink:0;
+}
+
+.guindo{
+    background:#7b1e3a;
+}
+
+.azul-icono{
+    background:#2563eb;
+}
+
+/* TEXTO */
+
+p{
+    font-size:24px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+ul{
+    margin-left:30px;
+    margin-top:10px;
+}
+
+li{
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+/* DOS COLUMNAS */
+
+.columnas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#7b1e3a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:30px;
+}
+
+footer a{
+    color:#8ec5ff;
+    text-decoration:none;
+    font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="imagenes/its.png" class="logo" alt="ITS">
+
+<div class="titulo">
+
+<h1>
+Unidad 3: Selección de Componentes para Ensamble
+</h1>
+
+<h2>
+ARQUITECTURA DE COMPUTADORAS
+</h2>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+</div>
+
+<img src="imagenes/Logo-Tec.png" class="logo" alt="TecNM">
+
+</header>
+
+<!-- MENÚ -->
+
+<nav>
+
+<a href="index.html">INICIO</a>
+
+<a href="Practicas.html">PRÁCTICAS</a>
+
+<a href="Tareas.html">TAREAS</a>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section>
+
+<a href="index.html" class="btn-regresar">
+← Regresar
+</a>
+
+<!-- TEMA 1 -->
+
+<div class="card">
+
+<h2>
+El Chipset y la Unidad Central de Procesamiento (CPU)
+</h2>
+
+<div class="info">
+
+<p>
+El Chipset es el conjunto de circuitos en la placa base que coordina la comunicación entre el procesador, la memoria y los periféricos. Actúa como un centro de control fundamental para la organización del sistema:
+</p>
+
+</div>
+
+<div class="fila">
+
+<div>
+
+<ul>
+
+<li>Arquitectura Clásica: Se dividía en Northbridge (comunicación de alta velocidad para CPU, RAM y video) y Southbridge (baja velocidad para puertos USB, SATA y audio). </li>
+
+<li>Arquitectura Moderna: Muchas funciones del Northbridge se integraron en la CPU, simplificando el chipset a un solo chip (PCH) que maneja almacenamiento y conectividad. </li>
+
+<li>La CPU: Conocida como el "cerebro", interpreta y ejecuta instrucciones mediante el ciclo Fetch-Decode-Execute-Store. Sus componentes clave incluyen la Unidad de Control (CU), la Unidad Aritmético-Lógica (ALU), registros y memoria caché. </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- MULTIPROCESAMIENTO -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🔄
+</div>
+
+<div>
+
+
+<h3 style="color:#2563eb;">
+El Ciclo de Instrucción (Ciclo FDE)
+</h3>
+
+<div class="info">
+
+<p>
+La transferencia de datos se realiza a través de buses, que funcionan como "autopistas de información":
+</p>
+
+</div>
+<ul>
+
+<li>Tipos de Buses: Existen buses de datos (bidireccional), de direcciones (indica la ubicación en memoria) y de control (coordina señales como lectura/escritura). El arbitraje del bus decide qué dispositivo tiene prioridad para evitar colisiones de datos.  </li>
+
+<p>Puertos de E/S: Son las interfaces para dispositivos externos. :</p>
+
+<ul>
+
+    <li>Entrada: Teclado, mouse, escáner. </li>
+
+    <li>Salida: Monitor, bocinas, impresora. </li>
+
+    <li>E/S: Pantallas táctiles, memorias USB. </li>
+
+</ul>
+
+</ul>
+
+</div>
+
+</div>
+<!-- FLYNN -->
+
+<div class="fila">
+
+<div class="icono guindo">
+📇
+</div>
+
+<div>
+
+<h3>
+Controladores Especializados
+</h3>
+
+<ul>
+
+<li>Controlador de Interrupciones: Gestiona señales urgentes de dispositivos que requieren atención inmediata de la CPU. Los sistemas modernos usan el controlador APIC, que es eficiente en entornos multiprocesador. </li>
+
+<li>DMA (Acceso Directo a Memoria): Libera a la CPU de la tarea de copiar datos, permitiendo que los periféricos transfieran información directamente a la RAM. </li>
+
+<li>Temporizadores (Timers): Circuitos que miden el tiempo y generan señales periódicas para controlar eventos del sistema operativo. </li>
+
+<li>Controladores de Video: Procesan y generan la señal de imagen. Pueden ser integrados (en el procesador, para tareas básicas) o dedicados (tarjetas independientes con su propia VRAM para diseño o juegos). </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+💾
+</div>
+
+<div>
+
+<h3>
+
+Almacenamiento, Energía y Aplicaciones
+
+</h3>
+
+<ul>
+
+<li>Almacenamiento: Incluye discos HDD (mayor capacidad, más lentos), SSD (más rápidos y resistentes), dispositivos externos y almacenamiento en la nube. </li>
+
+<li>Fuentes de Alimentación: Convierten la corriente alterna en corriente directa y la distribuyen de forma estable. Las más comunes son las ATX, que pueden ser modulares o no modulares. </li>
+
+<p>Ambientes de Servicio: Las computadoras son esenciales para automatizar tareas en diversos sectores: </p>
+
+<ul>
+
+    <li>Negocios: Administración, contabilidad y marketing. </li>
+
+    <li>Industria: Automatización de producción, robótica y control de calidad. </li>
+
+    <li>Comercio Electrónico: Tiendas en línea, pagos digitales y logística global. </li>
+
+</ul>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+<p>
+Arquitectura de Computadoras
+</p>
+
+<a href="https://www.facebook.com/TecNMcampusSaltillo">
+Facebook Tecnológico de Saltillo
+</a>
+
+</footer>
+
+</body>
+</html>

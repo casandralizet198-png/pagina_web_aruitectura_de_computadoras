@@ -40,7 +40,7 @@ body{
 /* EFECTO EN LOGOS */
 /* Afecta cuando el cursor pasa sobre los logos */
 .logo:hover{
-    transform:scale(1.05);
+    transform:scale(1.05) rotate(2deg);
 }
 
 /* CONTENEDOR DEL TÍTULO */
@@ -56,6 +56,8 @@ body{
     color:white;
     font-size:70px;
     margin-bottom:10px;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.3);
+    letter-spacing:2px;
 }
 
 /* SUBTÍTULO DEL HEADER */
@@ -63,6 +65,7 @@ body{
 .titulo p{
     color:#ffd6e0;
     font-size:50px;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.2);
 }
 
 /* MENÚ */
@@ -72,6 +75,9 @@ nav{
     padding:25px;
     text-align:center;
     box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 /* OPCIONES DEL MENÚ */
@@ -83,6 +89,8 @@ nav a{
     font-weight:bold;
     font-size:25px;
     transition:0.3s;
+    padding:12px 18px;
+    border-radius:15px;
 }
 
 /* EFECTO DEL MENÚ */
@@ -90,6 +98,7 @@ nav a{
 nav a:hover{
     color:#ffd6e0;
     letter-spacing:2px;
+    background:rgba(255,255,255,0.1);
 }
 
 /* ESPACIO DE LAS SECCIONES */
@@ -108,12 +117,15 @@ section{
     box-shadow:0px 8px 20px rgba(0,0,0,0.1);
     font-size:30px;
     transition:0.3s;
+    border-left:12px solid #7b1e3a;
 }
 
 /* EFECTO DE TARJETAS */
 /* Afecta cuando el cursor pasa sobre tarjetas */
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px);
+    box-shadow:0px 12px 25px rgba(0,0,0,0.15);
+    background:#fffafb;
 }
 
 /* TÍTULOS PRINCIPALES */
@@ -129,6 +141,9 @@ h2{
     color:#7b1e3a;
     font-size:50px;
     margin-bottom:20px;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.1);
+    letter-spacing:1px;
+    padding-left:15px;
 }
 
 /* TÍTULOS PEQUEÑOS */
@@ -137,6 +152,7 @@ h3{
     color:#7b1e3a;
     font-size:50px;
     margin-bottom:15px;
+    padding-left:12px;
 }
 
 /* SUBTÍTULOS MÁS PEQUEÑOS */
@@ -165,6 +181,14 @@ ul{
 /* Afecta cada elemento individual */
 li{
     margin-bottom:12px;
+    padding-left:8px;
+    transition:0.3s;
+}
+
+/* EFECTO EN LISTAS */
+li:hover{
+    color:#7b1e3a;
+    transform:translateX(5px);
 }
 
 /* BOTONES */
@@ -186,7 +210,8 @@ button{
 /* Afecta cuando el cursor pasa sobre los botones */
 button:hover{
     background:#5c122b;
-    transform:scale(1.05);
+    transform:scale(1.08);
+    box-shadow:0px 8px 15px rgba(0,0,0,0.25);
 }
 
 /* IMÁGENES */
@@ -195,6 +220,54 @@ img{
     border-radius:25px;
     margin-top:20px;
     box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+/* EFECTO EN IMÁGENES */
+img:hover{
+    transform:scale(1.02);
+}
+
+/* CAJAS DE INFORMACIÓN */
+.info{
+    background:#fff7fa;
+    border-left:10px solid #7b1e3a;
+    padding:25px;
+    border-radius:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.08);
+}
+
+/* FILAS O APARTADOS */
+.fila{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-top:20px;
+    margin-bottom:20px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+/* EFECTO EN FILAS */
+.fila:hover{
+    background:#fff8fb;
+    transform:translateY(-3px);
+}
+
+/* ICONOS DECORATIVOS */
+.icono{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    color:white;
+    background:#7b1e3a;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
 }
 
 /* PIE DE PÁGINA */
@@ -206,20 +279,23 @@ footer{
     padding:25px;
     margin-top:30px;
     font-size:35px;
+    border-radius:30px 30px 0px 0px;
 }
 
 /* REDES SOCIALES */
 /* Afecta enlaces de Facebook, Instagram, etc */
 footer a{
-    color:rgb(9, 9, 236);
+    color:#8ec5ff;
     text-decoration:none;
     margin:15px;
     font-size:30px;
     transition:0.3s;
+    font-weight:bold;
 }
 
 /* EFECTO EN REDES SOCIALES */
 /* Afecta cuando el cursor pasa sobre redes */
 footer a:hover{
-    color:#0537bf;
+    color:white;
+    letter-spacing:1px;
 }

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resumen Unidad 1</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+/* GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4eef1;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(100deg,#7b1e3a,#5c122b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width:120px;
+}
+
+.titulo{
+    text-align:center;
+}
+
+.titulo h1{
+    color:white;
+    font-size:60px;
+}
+
+.titulo h2{
+    color:white;
+    font-size:40px;
+    margin-top:10px;
+}
+
+.titulo p{
+    color:#ffd6e0;
+    font-size:25px;
+    margin-top:10px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#5c122b;
+    display:flex;
+    justify-content:center;
+    gap:150px;
+    padding:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd6e0;
+}
+
+/* SECCIÓN */
+
+section{
+    padding:25px;
+}
+
+/* BOTÓN */
+
+.btn-regresar{
+    background:#7b1e3a;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.btn-regresar:hover{
+    background:#5c122b;
+}
+
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+
+.card h2{
+    color:#7b1e3a;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#7b1e3a;
+    font-size:32px;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+/* CAJAS */
+
+.info{
+    background:#fdf5f7;
+    border:2px solid #f0d6de;
+    border-left:10px solid #7b1e3a;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.azul{
+    border-left:10px solid #2563eb;
+}
+
+/* FILAS */
+
+.fila{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+}
+
+/* ICONOS */
+
+.icono{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    color:white;
+    flex-shrink:0;
+}
+
+.guindo{
+    background:#7b1e3a;
+}
+
+.azul-icono{
+    background:#2563eb;
+}
+
+/* TEXTO */
+
+p{
+    font-size:24px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+ul{
+    margin-left:30px;
+    margin-top:10px;
+}
+
+li{
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+/* DOS COLUMNAS */
+
+.columnas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#7b1e3a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:30px;
+}
+
+footer a{
+    color:#8ec5ff;
+    text-decoration:none;
+    font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="imagenes/its.png" class="logo" alt="ITS">
+
+<div class="titulo">
+
+<h1>
+Unidad 2: Estructura y Funcionamiento del Procesador
+</h1>
+
+<h2>
+ARQUITECTURA DE COMPUTADORAS
+</h2>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+</div>
+
+<img src="imagenes/Logo-Tec.png" class="logo" alt="TecNM">
+
+</header>
+
+<!-- MENÚ -->
+
+<nav>
+
+<a href="index.html">INICIO</a>
+
+<a href="Practicas.html">PRÁCTICAS</a>
+
+<a href="Tareas.html">TAREAS</a>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section>
+
+<a href="index.html" class="btn-regresar">
+← Regresar
+</a>
+
+<!-- TEMA 1 -->
+
+<div class="card">
+
+<h2>
+Organización del Procesador y Registros
+</h2>
+
+<div class="info">
+
+<p>
+
+El procesador (CPU) actúa como el núcleo del sistema informático, encargado de interpretar, ejecutar instrucciones y coordinar las operaciones internas. Para lograr un alto rendimiento y evitar el acceso constante a la memoria RAM (que ralentizaría el sistema), la CPU utiliza registros, que son las unidades de almacenamiento temporal más rápidas del sistema. 
+Existen dos grandes categorías de registros: 
+</p>
+
+</div>
+
+<!-- VON NEUMANN -->
+
+<div class="fila">
+
+<div class="icono guindo">
+👤
+</div>
+
+<div>
+
+<h3>
+A. Registros Visibles para el Usuario.
+</h3>
+
+<p>
+
+Son accesibles directamente por el programador o el software para almacenar datos o direcciones durante la ejecución: 
+
+</p>
+
+<div class="fila">
+
+<div>
+
+<ul>
+
+<li>Registros de Datos: Manipulan la información de forma directa (por ejemplo, los acumuladores en operaciones aritméticas y lógicas). </li>
+
+<li>Registros de Direcciones: Almacenan direcciones de memoria para agilizar el acceso a los datos. .</li>
+
+<li>Registros de Índice: Facilitan el direccionamiento relativo o indirecto, comúnmente con autoincremento para recorrer estructuras de datos. .</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- HARVARD -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🛡️
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+B. Registros de Control y Estado
+</h3>
+
+
+<p>
+
+Son accesibles directamente por el programador o el software para almacenar datos o direcciones durante la ejecución: 
+
+</p>
+
+<div class="fila">
+
+<ul>
+
+<li>Registros de Datos: Manipulan la información de forma directa (por ejemplo, los acumuladores en operaciones aritméticas y lógicas). </li>
+
+<li>Registros de Direcciones: Almacenan direcciones de memoria para agilizar el acceso a los datos. .</li>
+
+<li>Registros de Índice: Facilitan el direccionamiento relativo o indirecto, comúnmente con autoincremento para recorrer estructuras de datos. .</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PIPELINE -->
+
+<div class="fila">
+
+<div class="icono guindo">
+⚙️
+</div>
+
+<div>
+
+<h3>
+Arquitectura Segmentada (Pipeline)
+</h3>
+
+<p>
+
+Divide el procesamiento de instrucciones en varias etapas que se ejecutan en paralelo.
+
+</p>
+
+<ul>
+
+<li>Contador de Programa (PC): Contiene la dirección de la siguiente instrucción a ejecutar. </li>
+
+<li>Registro de Instrucción (IR / CIR): Almacena la instrucción actual mientras es decodificada y ejecutada. </li>
+
+<li>Registro de Dirección de Memoria (MAR): Contiene la dirección de memoria a la que se desea acceder (lectura o escritura). </li>
+
+<li>Registro Intermedio de Memoria (MBR): Almacena temporalmente los datos leídos o por escribir en la memoria. </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MULTIPROCESAMIENTO -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🔄
+</div>
+
+<div>
+
+
+<h3 style="color:#2563eb;">
+El Ciclo de Instrucción (Ciclo FDE)
+</h3>
+
+<div class="info">
+
+<p>
+Es la secuencia fundamental y sincronizada con el reloj del procesador que transforma la lógica binaria en 
+acción computacional a través de tres etapas principales:
+</p>
+
+</div>
+<ul>
+
+<li>1.	Búsqueda (Fetch): El PC envía la dirección de la siguiente instrucción a la memoria, la instrucción se carga en el Registro de Instrucción (CIR) y el PC se incrementa para apuntar a la siguiente secuencia. </li>
+
+<li>2.	Decodificación (Decode): El decodificador interpreta el código de operación (opcode) de la instrucción, identifica los operandos e involucra los registros necesarios. </li>
+
+<li>3.	Ejecución (Execute): La Unidad de Control genera las señales necesarias para que la Unidad Aritmético Lógica (ALU) u otros componentes realicen la operación (sumas, restas, saltos, etc.) y guarden el resultado en los registros o en la memoria. </li>
+
+<p>Segmentación de Instrucciones (Pipelining):</p>
+
+<ul>
+
+    <li>Para maximizar la eficiencia, las CPUs modernas ejecutan diferentes etapas de distintas instrucciones de manera simultánea (como una línea de ensamblaje). Aunque no acelera la velocidad de una instrucción individual, incrementa notablemente el rendimiento general del procesador manteniendo sus componentes ocupados en todo momento. </li>
+
+</ul>
+
+</ul>
+
+</div>
+
+</div>
+<!-- FLYNN -->
+
+<div class="fila">
+
+<div class="icono guindo">
+📍
+</div>
+
+<div>
+
+<h3>
+Modos de Direccionamiento y Casos de Estudio:
+</h3>
+
+<div class="info">
+<p>
+
+Los modos de direccionamiento son las técnicas que utiliza el procesador para acceder a la memoria. Dominarlos es crítico para evitar fallos de seguridad (como la vulnerabilidad Heartbleed de 2014). 
+
+</p>
+</div>
+<ul>
+
+<li>Inmediato: El operando está incluido en la propia instrucción (Ej: MOV AX, 0ABCDH en x86 o addi $t0, $t1, 15 en MIPS). </li>
+
+<li>Directo (Absoluto): La instrucción contiene la dirección física completa en memoria (Ej: MOV BX, [1234H] en el 8086). </li>
+
+<li>Por Registro: El operando reside directamente dentro de un registro interno, siendo el acceso más rápido (Ej: MOV AX, CX). </li>
+
+<li>Indirecto: La instrucción apunta a un registro que contiene la dirección de memoria donde realmente está el dato. Es ideal para punteros en C/C++ y listas enlazadas (Ej: MOV AX, [BX]). </li>
+
+<li>Indexado y Base + Índice: Combina un registro base (inicio del bloque) con un registro índice (desplazamiento relativo) y un offset opcional (Ej: MOV AX, [BX+SI+8]). Permite el acceso eficiente a matrices. </li>
+
+<p>Casos de Estudio:</p>
+<ul>
+    <li>Caso 1 - Desbordamiento de buffer (Code Red, 2001): Una aplicación web en C usó la función strcpy mediante direccionamiento indirecto a un buffer estático sin validar los límites. Un atacante inyectó una cadena que sobrescribió la dirección de retorno, infectando a más de 350,000 servidores. Lección: Validar siempre los límites al usar punteros indirectos. </li>
+
+    <li>Caso 2 - Memoria mapeada en ARM Cortex-M (2023): Los periféricos se acceden mediante direccionamiento indexado (Ej: LDR R0, [R1, #0x400]), donde R1 tiene la base del bloque y el offset apunta al registro de datos. Esto permite controlar el hardware de manera crítica y veloz sin interrupciones. </li>
+</ul>
+
+
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+<p>
+Arquitectura de Computadoras
+</p>
+
+<a href="https://www.facebook.com/TecNMcampusSaltillo">
+Facebook Tecnológico de Saltillo
+</a>
+
+</footer>
+
+</body>
+</html>

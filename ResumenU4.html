@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resumen Unidad 1</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+/* GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4eef1;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    background:linear-gradient(100deg,#7b1e3a,#5c122b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width:120px;
+}
+
+.titulo{
+    text-align:center;
+}
+
+.titulo h1{
+    color:white;
+    font-size:60px;
+}
+
+.titulo h2{
+    color:white;
+    font-size:40px;
+    margin-top:10px;
+}
+
+.titulo p{
+    color:#ffd6e0;
+    font-size:25px;
+    margin-top:10px;
+}
+
+/* MENÚ */
+
+nav{
+    background:#5c122b;
+    display:flex;
+    justify-content:center;
+    gap:150px;
+    padding:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd6e0;
+}
+
+/* SECCIÓN */
+
+section{
+    padding:25px;
+}
+
+/* BOTÓN */
+
+.btn-regresar{
+    background:#7b1e3a;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.btn-regresar:hover{
+    background:#5c122b;
+}
+
+/* TARJETAS */
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+
+.card h2{
+    color:#7b1e3a;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#7b1e3a;
+    font-size:32px;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+/* CAJAS */
+
+.info{
+    background:#fdf5f7;
+    border:2px solid #f0d6de;
+    border-left:10px solid #7b1e3a;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.azul{
+    border-left:10px solid #2563eb;
+}
+
+/* FILAS */
+
+.fila{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:15px;
+    padding:20px;
+    margin-top:15px;
+}
+
+/* ICONOS */
+
+.icono{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+    color:white;
+    flex-shrink:0;
+}
+
+.guindo{
+    background:#7b1e3a;
+}
+
+.azul-icono{
+    background:#2563eb;
+}
+
+/* TEXTO */
+
+p{
+    font-size:24px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+ul{
+    margin-left:30px;
+    margin-top:10px;
+}
+
+li{
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+/* DOS COLUMNAS */
+
+.columnas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#7b1e3a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:30px;
+}
+
+footer a{
+    color:#8ec5ff;
+    text-decoration:none;
+    font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="imagenes/its.png" class="logo" alt="ITS">
+
+<div class="titulo">
+
+<h1>
+Unidad 4: Procesamiento Paralelo
+</h1>
+
+<h2>
+ARQUITECTURA DE COMPUTADORAS
+</h2>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+</div>
+
+<img src="imagenes/Logo-Tec.png" class="logo" alt="TecNM">
+
+</header>
+
+<!-- MENÚ -->
+
+<nav>
+
+<a href="index.html">INICIO</a>
+
+<a href="Practicas.html">PRÁCTICAS</a>
+
+<a href="Tareas.html">TAREAS</a>
+
+</nav>
+
+<!-- CONTENIDO -->
+
+<section>
+
+<a href="index.html" class="btn-regresar">
+← Regresar
+</a>
+
+<!-- TEMA 1 -->
+
+<div class="card">
+
+<h2>
+Aspectos Básicos de la Computación Paralela
+</h2>
+
+<div class="info">
+
+<p>
+Para que un sistema paralelo funcione correctamente, se deben gestionar varios conceptos clave:
+</p>
+
+</div>
+
+<div class="fila">
+
+<div>
+
+<ul>
+
+<li>División del problema: Descomponer una tarea grande en subtareas independientes.</li>
+
+<li>Comunicación e Interconexión: Los procesadores necesitan compartir datos entre sí. Esto se logra mediante redes estáticas (rutas físicas fijas, excelentes para rendimiento local predecible pero poco flexibles) o redes dinámicas (rutas que cambian mediante conmutadores, ofreciendo mayor flexibilidad y escalabilidad).</li>
+
+<li>Sincronización: Coordinar el tiempo de ejecución de los procesadores para evitar que uno use datos antes de que otro los haya terminado de calcular.</li>
+
+<li>Balance de carga: Distribuir el trabajo de manera equitativa para que ningún procesador se quede inactivo mientras otros están sobrecargados.</li>
+
+<li>Escalabilidad y Speedup (Aceleración): La capacidad del sistema de mejorar su rendimiento (hacerse más rápido) a medida que se añaden más procesadores.</li>
+
+<p>Tipos de Computación Paralela:</p>
+
+<ul>
+
+    <li>1.	A nivel de bits: Aumentar el tamaño de la palabra del procesador (pasar de 32 bits a 64 bits) para reducir el número de instrucciones necesarias.</li>
+
+    <li>2.	A nivel de instrucciones: El procesador reordena y ejecuta varias instrucciones a la vez (como el pipelining o la ejecución superescalar).</li>
+
+    <li>3.	Paralelismo de datos: Se aplica la misma operación matemática a un conjunto masivo de datos simultáneamente (típico en GPUs).</li>
+
+    <li>4.	Paralelismo de tareas: Diferentes procesadores ejecutan tareas o hilos de ejecución completamente distintos sobre los mismos o diferentes datos.</li>
+
+</ul>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- MULTIPROCESAMIENTO -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+🔄
+</div>
+
+<div>
+
+
+<h3 style="color:#2563eb;">
+Clasificación de las Arquitecturas Paralelas
+</h3>
+
+<div class="info">
+
+<p>
+La organización de los sistemas de procesamiento se define principalmente a través de dos taxonomías esenciales:
+</p>
+
+</div>
+
+<p>A. Taxonomía de Flynn:</p>
+
+<p>Clasifica los sistemas basándose en el número de flujos de instrucciones y flujos de datos simultáneos:</p>
+
+<ul>
+
+    <li>SISD (Single Instruction, Single Data): Computadores secuenciales tradicionales. Una sola instrucción procesa un solo dato a la vez.</li>
+
+    <li>SIMD (Single Instruction, Multiple Data): Una única instrucción controla múltiples elementos de procesamiento en paralelo sobre datos distintos. Ideal para el procesamiento de gráficos y arreglos.</li>
+
+    <li>MISD (Multiple Instruction, Single Data): Múltiples instrucciones operan simultáneamente sobre un único flujo de datos. Es poco común y se utiliza principalmente en sistemas críticos de alta tolerancia a fallos (como filtros de señales espaciales).</li>
+
+    <li>MIMD (Multiple Instruction, Multiple Data): Múltiples procesadores autónomos ejecutan simultáneamente instrucciones diferentes sobre datos diferentes. Es la arquitectura más utilizada en los supercomputadores modernos y procesadores multinúcleo.</li>
+
+</ul>
+
+<p>B. Arquitectura de Computadoras Secuenciales (Sistemas Multiprocesador)</p>
+
+<p>Dentro de los sistemas que ejecutan múltiples tareas, la forma en que se organizan e interconectan los procesadores determina su comportamiento:</p>
+
+<ul>
+
+    <li>Procesadores en paralelo (Simétricos - SMP): Dos o más procesadores idénticos comparten el acceso a una memoria RAM común y están controlados por un único sistema operativo.</li>
+
+    <p>Sistemas de Memoria Compartida (UMA vs. NUMA):</p>
+    <ul>
+
+        <li>UMA (Uniform Memory Access): Todos los procesadores tardan exactamente el mismo tiempo en acceder a cualquier parte de la memoria.</li>
+        <li>NUMA (Non-Uniform Memory Access): Cada procesador tiene una memoria local asignada a la que accede muy rápido; acceder a la memoria de otros procesadores a través del bus interno toma más tiempo.</li>
+
+    </ul>
+    
+
+    <li>Sistemas de Memoria Distribuida (Clusters): Cada nodo tiene su propio procesador y su propia memoria independiente. Se comunican enviando mensajes a través de una red (como una red de computadoras en un centro de datos).</li>
+
+</ul>
+
+</ul>
+
+</ul>
+
+</div>
+
+</div>
+<!-- FLYNN -->
+
+<div class="fila">
+
+<div class="icono guindo">
+📇
+</div>
+
+<div>
+
+<h3>
+Organización de las Direcciones de Memoria
+</h3>
+
+<div class="info">
+
+<p>
+El gran reto en los sistemas con múltiples procesadores es mantener la coherencia de la información cuando varios núcleos intentan leer o escribir en la misma dirección de memoria.
+</p>
+
+</div>
+
+<ul>
+
+<li>Coherencia de Caché: Si el Núcleo A modifica un dato en su memoria caché local, el Núcleo B debe enterarse inmediatamente para no trabajar con un dato obsoleto. Para resolver esto se emplean protocolos de hardware (como el protocolo MESI).</li>
+
+<li>Modelos de Consistencia: Definen las reglas de cuándo y cómo los cambios realizados por un procesador en la memoria se vuelven visibles para todos los demás procesadores del sistema.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="icono guindo">
+📇
+</div>
+
+<div>
+
+<h3>
+
+Casos de Estudio Reales
+</h3>
+
+<div class="info">
+
+    <p>La presentación concluye mostrando cómo se aplican estos conceptos de paralelismo en la industria tecnológica actual:</p>
+
+</div>
+
+<ul>
+
+    <li>1.	Intel Core / Xeon (Multinúcleo y Redes Internas): Destacan por la forma en que conectan sus núcleos de manera interna. Históricamente, han usado topologías de Redes en Anillo (Ring Bus) para los procesadores de escritorio comunes y Redes en Malla (Mesh) para gestionar los servidores masivos Xeon.</li>
+
+    <li>2.	AMD Ryzen / Epyc (Arquitectura Chiplet): En lugar de fabricar un chip gigante y costoso, AMD construye pequeños "pedazos" de procesador independientes llamados chiplets y los conecta mediante una red de interconexión propietaria ultra rápida llamada Infinity Fabric.</li>
+
+    <li>3.	NVIDIA GPUs (Paralelismo Masivo): A diferencia de una CPU tradicional que tiene pocos núcleos pero muy potentes, una tarjeta gráfica contiene miles de núcleos pequeños trabajando en paralelo bajo el modelo SIMD, haciéndolas ideales para el renderizado de videojuegos, cálculos científicos complejos e Inteligencia Artificial.</li>
+
+</ul>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+Instituto Tecnológico de Saltillo
+</p>
+
+<p>
+Arquitectura de Computadoras
+</p>
+
+<a href="https://www.facebook.com/TecNMcampusSaltillo">
+Facebook Tecnológico de Saltillo
+</a>
+
+</footer>
+
+</body>
+</html>
