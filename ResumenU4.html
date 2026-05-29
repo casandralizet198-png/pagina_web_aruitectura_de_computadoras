@@ -335,16 +335,18 @@ Para que un sistema paralelo funcione correctamente, se deben gestionar varios c
 </div>
 
 
-<!-- MULTIPROCESAMIENTO -->
+<div>
+<!-- Clasificación de las Arquitecturas Paralelas -->
+
+<div class="card">
 
 <div class="fila">
 
 <div class="icono azul-icono">
-🔄
+C
 </div>
 
 <div>
-
 
 <h3 style="color:#2563eb;">
 Clasificación de las Arquitecturas Paralelas
@@ -358,62 +360,118 @@ La organización de los sistemas de procesamiento se define principalmente a tra
 
 </div>
 
-<p>A. Taxonomía de Flynn:</p>
-
-<p>Clasifica los sistemas basándose en el número de flujos de instrucciones y flujos de datos simultáneos:</p>
-
-<ul>
-
-    <li>SISD (Single Instruction, Single Data): Computadores secuenciales tradicionales. Una sola instrucción procesa un solo dato a la vez.</li>
-
-    <li>SIMD (Single Instruction, Multiple Data): Una única instrucción controla múltiples elementos de procesamiento en paralelo sobre datos distintos. Ideal para el procesamiento de gráficos y arreglos.</li>
-
-    <li>MISD (Multiple Instruction, Single Data): Múltiples instrucciones operan simultáneamente sobre un único flujo de datos. Es poco común y se utiliza principalmente en sistemas críticos de alta tolerancia a fallos (como filtros de señales espaciales).</li>
-
-    <li>MIMD (Multiple Instruction, Multiple Data): Múltiples procesadores autónomos ejecutan simultáneamente instrucciones diferentes sobre datos diferentes. Es la arquitectura más utilizada en los supercomputadores modernos y procesadores multinúcleo.</li>
-
-</ul>
-
-<p>B. Arquitectura de Computadoras Secuenciales (Sistemas Multiprocesador)</p>
-
-<p>Dentro de los sistemas que ejecutan múltiples tareas, la forma en que se organizan e interconectan los procesadores determina su comportamiento:</p>
-
-<ul>
-
-    <li>Procesadores en paralelo (Simétricos - SMP): Dos o más procesadores idénticos comparten el acceso a una memoria RAM común y están controlados por un único sistema operativo.</li>
-
-    <p>Sistemas de Memoria Compartida (UMA vs. NUMA):</p>
-    <ul>
-
-        <li>UMA (Uniform Memory Access): Todos los procesadores tardan exactamente el mismo tiempo en acceder a cualquier parte de la memoria.</li>
-        <li>NUMA (Non-Uniform Memory Access): Cada procesador tiene una memoria local asignada a la que accede muy rápido; acceder a la memoria de otros procesadores a través del bus interno toma más tiempo.</li>
-
-    </ul>
-    
-
-    <li>Sistemas de Memoria Distribuida (Clusters): Cada nodo tiene su propio procesador y su propia memoria independiente. Se comunican enviando mensajes a través de una red (como una red de computadoras en un centro de datos).</li>
-
-</ul>
-
-</ul>
-
-</ul>
-
-</div>
-
-</div>
-<!-- FLYNN -->
+<!-- TAXONOMÍA DE FLYNN -->
 
 <div class="fila">
 
 <div class="icono guindo">
-📇
+A
 </div>
 
 <div>
 
 <h3>
-Organización de las Direcciones de Memoria
+Taxonomía de Flynn
+</h3>
+
+<p>
+Clasifica los sistemas basándose en el número de flujos de instrucciones y flujos de datos simultáneos:
+</p>
+
+<ul>
+
+<li>
+SISD (Single Instruction, Single Data): Computadores secuenciales tradicionales. Una sola instrucción procesa un solo dato a la vez.
+</li>
+
+<li>
+SIMD (Single Instruction, Multiple Data): Una única instrucción controla múltiples elementos de procesamiento en paralelo sobre datos distintos.
+</li>
+
+<li>
+MISD (Multiple Instruction, Single Data): Múltiples instrucciones operan simultáneamente sobre un único flujo de datos.
+</li>
+
+<li>
+MIMD (Multiple Instruction, Multiple Data): Múltiples procesadores ejecutan instrucciones diferentes sobre datos diferentes.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- SISTEMAS MULTIPROCESADOR -->
+
+<div class="fila">
+
+<div class="icono azul-icono">
+B
+</div>
+
+<div>
+
+<h3 style="color:#2563eb;">
+Arquitectura de Computadoras Secuenciales (Sistemas Multiprocesador)
+</h3>
+
+<p>
+Dentro de los sistemas que ejecutan múltiples tareas, la forma en que se organizan e interconectan los procesadores determina su comportamiento:
+</p>
+
+<ul>
+
+<li>
+Procesadores en paralelo (SMP): Dos o más procesadores idénticos comparten el acceso a una memoria RAM común.
+</li>
+
+</ul>
+
+<p>
+    Sistemas de Memoria Compartida (UMA vs. NUMA):
+</p>
+
+<ul>
+
+<li>
+UMA (Uniform Memory Access): Todos los procesadores tardan el mismo tiempo en acceder a la memoria.
+</li>
+
+<li>
+NUMA (Non-Uniform Memory Access): Cada procesador tiene una memoria local más rápida.
+</li>
+
+<li>
+Sistemas de Memoria Distribuida (Clusters): Cada nodo posee su propio procesador y memoria independiente.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Organización de las Direcciones de Memoria -->
+
+<div class="card">
+
+<div class="fila">
+
+<div class="icono guindo">
+💾
+</div>
+
+<div>
+
+<h3>
+    Organización de las Direcciones de Memoria
 </h3>
 
 <div class="info">
@@ -426,9 +484,13 @@ El gran reto en los sistemas con múltiples procesadores es mantener la coherenc
 
 <ul>
 
-<li>Coherencia de Caché: Si el Núcleo A modifica un dato en su memoria caché local, el Núcleo B debe enterarse inmediatamente para no trabajar con un dato obsoleto. Para resolver esto se emplean protocolos de hardware (como el protocolo MESI).</li>
+<li>
+Coherencia de Caché: Si el Núcleo A modifica un dato en su memoria caché local, el Núcleo B debe enterarse inmediatamente para no trabajar con un dato obsoleto. Para resolver esto se emplean protocolos de hardware (como el protocolo MESI).
+</li>
 
-<li>Modelos de Consistencia: Definen las reglas de cuándo y cómo los cambios realizados por un procesador en la memoria se vuelven visibles para todos los demás procesadores del sistema.</li>
+<li>
+Modelos de Consistencia: Definen las reglas de cuándo y cómo los cambios realizados por un procesador en la memoria se vuelven visibles para todos los demás procesadores del sistema.
+</li>
 
 </ul>
 
@@ -438,34 +500,45 @@ El gran reto en los sistemas con múltiples procesadores es mantener la coherenc
 
 </div>
 
+</div>
+
+<!-- Casos de Estudio Reales -->
+
+<div class="card">
+
 <div class="fila">
 
 <div class="icono guindo">
-📇
+🔍
 </div>
 
 <div>
 
 <h3>
-
 Casos de Estudio Reales
 </h3>
 
 <div class="info">
 
-    <p>La presentación concluye mostrando cómo se aplican estos conceptos de paralelismo en la industria tecnológica actual:</p>
+<p>
+La presentación concluye mostrando cómo se aplican estos conceptos de paralelismo en la industria tecnológica actual:
+</p>
 
 </div>
 
 <ul>
 
-    <li>1.	Intel Core / Xeon (Multinúcleo y Redes Internas): Destacan por la forma en que conectan sus núcleos de manera interna. Históricamente, han usado topologías de Redes en Anillo (Ring Bus) para los procesadores de escritorio comunes y Redes en Malla (Mesh) para gestionar los servidores masivos Xeon.</li>
+<li>
+🖥️ Intel Core / Xeon (Multinúcleo y Redes Internas): Destacan por la forma en que conectan sus núcleos de manera interna. Históricamente, han usado topologías de Redes en Anillo (Ring Bus) para los procesadores de escritorio comunes y Redes en Malla (Mesh) para gestionar los servidores masivos Xeon.
+</li>
 
-    <li>2.	AMD Ryzen / Epyc (Arquitectura Chiplet): En lugar de fabricar un chip gigante y costoso, AMD construye pequeños "pedazos" de procesador independientes llamados chiplets y los conecta mediante una red de interconexión propietaria ultra rápida llamada Infinity Fabric.</li>
+<li>
+🖥️ AMD Ryzen / Epyc (Arquitectura Chiplet): En lugar de fabricar un chip gigante y costoso, AMD construye pequeños “pedazos” de procesador llamados chiplets y los conecta mediante Infinity Fabric.
+</li>
 
-    <li>3.	NVIDIA GPUs (Paralelismo Masivo): A diferencia de una CPU tradicional que tiene pocos núcleos pero muy potentes, una tarjeta gráfica contiene miles de núcleos pequeños trabajando en paralelo bajo el modelo SIMD, haciéndolas ideales para el renderizado de videojuegos, cálculos científicos complejos e Inteligencia Artificial.</li>
-
-</ul>
+<li>
+🖥️ NVIDIA GPUs (Paralelismo Masivo): Una tarjeta gráfica contiene miles de núcleos pequeños trabajando en paralelo bajo el modelo SIMD, ideal para videojuegos, cálculos científicos e Inteligencia Artificial.
+</li>
 
 </ul>
 
